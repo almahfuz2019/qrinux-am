@@ -1,5 +1,4 @@
 import React from "react";
-
 import Image from "next/image";
 import Marquee from "../ui/marquee";
 
@@ -26,8 +25,9 @@ export default function ProjectsImagesCarousel() {
       alt: "Project Screenshot 4",
     },
   ];
+
   return (
-    <div className="bg-primary">
+    <section className="bg-primary">
       <div className="overflow-x-hidden">
         <div className="pb-12 sm:pb-14 lg:pb-16 2xl:pb-20 space-y-8">
           {/* Marquee: Left to Right */}
@@ -38,13 +38,16 @@ export default function ProjectsImagesCarousel() {
             reverse={false}
           >
             {projectImages.map((image) => (
-              <Image
-                key={image.id}
-                width={255}
-                height={255}
-                src={image.src}
-                alt={image.alt}
-              />
+              <figure key={image.id}>
+                <Image
+                  width={255}
+                  height={255}
+                  src={image.src}
+                  alt={image.alt}
+                  className="object-cover" // Optional: to maintain image aspect ratio
+                />
+                <figcaption className="sr-only">{image.alt}</figcaption>
+              </figure>
             ))}
           </Marquee>
 
@@ -56,17 +59,20 @@ export default function ProjectsImagesCarousel() {
             reverse={true}
           >
             {projectImages.map((image) => (
-              <Image
-                key={image.id}
-                width={255}
-                height={255}
-                src={image.src}
-                alt={image.alt}
-              />
+              <figure key={image.id}>
+                <Image
+                  width={255}
+                  height={255}
+                  src={image.src}
+                  alt={image.alt}
+                  className="object-cover" // Optional: to maintain image aspect ratio
+                />
+                <figcaption className="sr-only">{image.alt}</figcaption>
+              </figure>
             ))}
           </Marquee>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

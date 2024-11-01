@@ -28,9 +28,6 @@ const ContactForm = () => {
     const emailParams = {
       ...data,
       name: `${data.firstName} ${data.lastName}`,
-      message: `${data.message}`,
-      email: `${data.email}`,
-      phone: `${data.phone}`,
     };
 
     emailjs
@@ -64,7 +61,6 @@ const ContactForm = () => {
         className="text-start flex flex-col gap-5"
         onSubmit={handleSubmit(onSubmit)}
       >
-        {/* Form Fields */}
         {/* Name Fields */}
         <div className="flex flex-col sm:flex-row gap-5">
           <div className="grid w-full items-center gap-1.5">
@@ -125,7 +121,7 @@ const ContactForm = () => {
               placeholder="Enter your phone number"
               {...register("phone", {
                 pattern: {
-                  value: /^[0-9]+$/,
+                  value: /^[0-9]*$/,
                   message: "Phone number must contain only digits",
                 },
               })}
@@ -155,11 +151,11 @@ const ContactForm = () => {
           )}
         </div>
 
-        {/* Terms Checkbox and Submit Button */}
+        {/* Submit Button */}
         <div className="flex flex-col sm:flex-row items-start justify-end sm:items-center gap-5">
           <button
             type="submit"
-            className="sm:text-lg px-8 py-2 bg-primary text-white font-medium"
+            className="sm:text-lg px-8 py-2 bg-primary hover:bg-secondary text-white font-medium"
           >
             Send
           </button>

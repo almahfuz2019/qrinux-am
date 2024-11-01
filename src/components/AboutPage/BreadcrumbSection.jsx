@@ -9,12 +9,13 @@ import GridPatternHero from "../ui/grid-pattern-hero";
 export default function BreadcrumbSection() {
   return (
     <div className="bg-secondary">
-      {" "}
       <BreadcrumbContainer>
-        <div className="flex flex-row sm:flex-col justify-between items-center">
-          <SmallHeading>About Us</SmallHeading>
-          <SmallSubHeading>Home / About</SmallSubHeading>
-        </div>
+        <nav aria-label="Breadcrumb">
+          <div className="flex flex-row sm:flex-col justify-between items-center">
+            <SmallHeading>About Us</SmallHeading>
+            <SmallSubHeading>Home / About</SmallSubHeading>
+          </div>
+        </nav>
       </BreadcrumbContainer>
       <GridPatternHero
         width={30}

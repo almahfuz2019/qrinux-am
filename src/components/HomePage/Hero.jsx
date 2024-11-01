@@ -6,13 +6,15 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import IconCloudDemo from "../ui/icon-cloud";
 import { cn } from "@/lib/utils";
 import GridPatternHero from "../ui/grid-pattern-hero";
+import HeroButton from "./HeroButton";
+
 export default function Hero() {
   return (
-    <div className=" bg-secondary">
+    <section className="bg-secondary" aria-labelledby="hero-heading">
       <Custom_Container>
-        <div className="flex flex-col lg:flex-row gap-10 py-12 sm:py-14 lg:py-16 2xl:py-20 items-center ">
+        <div className="flex flex-col lg:flex-row gap-10 py-12 sm:py-14 lg:py-16 2xl:py-20 items-center">
           <div className="flex-1">
-            <Heading>
+            <Heading id="hero-heading">
               Your Dream,
               <br />
               Our Responsibility
@@ -20,24 +22,17 @@ export default function Hero() {
             <Description>
               We provide web design & development, Android and iOS app
               development, UI/UX design, CMS solutions, SEO optimization,
-              graphic design and secure payment integration services.
+              graphic design, and secure payment integration services.
             </Description>
 
-            <button className="relative text-xl px-5 py-2 md:py-2.5 transition-transform duration-300  bg-warning hover:bg-[#d73243] shadow-md text-white mt-2 group">
-              <span className="flex items-center gap-3 transition-all duration-300 ease-in-out transform">
-                Let’s Talk
-                <FaArrowRightLong className="transition-all duration-500 ease-in-out transform group-hover:rotate-45" />
-              </span>
-
-              {/* Animated background effect */}
-              <div className="absolute inset-0 bg-[#d73243] scale-0 transition-transform duration-500 ease-in-out rounded-lg opacity-10 group-hover:scale-100"></div>
-            </button>
+            <HeroButton />
           </div>
-          <div className="flex-1 relative z-20">
+          <div className="flex-1 relative z-20" aria-hidden="true">
             <IconCloudDemo />
           </div>
         </div>
-      </Custom_Container>{" "}
+      </Custom_Container>
+
       <GridPatternHero
         width={30}
         height={30}
@@ -50,6 +45,6 @@ export default function Hero() {
           "[mask-image:radial-gradient(1000px_circle_at_center,white,transparent)]",
         )}
       />
-    </div>
+    </section>
   );
 }

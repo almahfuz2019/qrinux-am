@@ -6,21 +6,19 @@ const Card = ({ team }) => {
   const { slug, name, designation, img } = team || {};
   return (
     <Link href={`/about/profile/${slug}`} passHref>
-      <div className="cursor-pointer">
+      <article className="cursor-pointer">
         <Image
           width={253}
           height={353}
           src={img}
-          alt={slug}
+          alt={`Profile picture of ${name}`} // Descriptive alt text for better SEO
           className="w-full"
         />
-        <h1 className="text-2xl font-semibold text-white font-inter mt-4 mb-1">
+        <h1 className="text-2xl font-semibold text-white font-inter mt-4 mb-1 hover:underline">
           {name}
         </h1>
-        <h2 className="font-inter text-lg text-[#F7FAFF]">
-          {designation}
-        </h2>
-      </div>
+        <h2 className="font-inter text-lg text-[#F7FAFF]">{designation}</h2>
+      </article>
     </Link>
   );
 };

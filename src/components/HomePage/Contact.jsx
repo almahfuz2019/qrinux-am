@@ -7,19 +7,20 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import GridPatternHero from "../ui/grid-pattern-hero";
 import { cn } from "@/lib/utils";
-export default function Contact(params) {
+
+export default function Contact() {
   return (
     <section className="py-12 sm:py-14 lg:py-16 2xl:py-20 relative z-50">
       <Custom_Container>
         <div className="flex flex-col lg:flex-row justify-between items-start sm:items-center sm:text-center lg:text-start">
           <div className="flex-1">
             <SubHeading>Contact</SubHeading>
-            <Heading>We Are Here, Let’s Talk </Heading>
+            <Heading>We Are Here, Let’s Talk</Heading>
           </div>
           <div className="flex-1 lg:hidden">
             <Description>
-              Lorem ipsum dolor sit amet, consectetur adipiscing do eiusmod
-              tempor incididunt ut labore et dolore magn
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </Description>
           </div>
         </div>
@@ -29,10 +30,11 @@ export default function Contact(params) {
             <div className="flex items-center gap-5 font-jost">
               <FaPhoneAlt className="text-5xl bg-[#F7FAFF] rounded-full text-primary p-[10px] lg:h-12 w-12" />
               <div>
-                <h1 className="text-lg font-light">Call Us</h1>
+                <h2 className="text-lg font-light">Call Us</h2>
                 <a
                   href="tel:+8801787878743"
-                  className="text-2xl font-semibold font-jost"
+                  className="text-2xl font-semibold font-jost hover:underline"
+                  aria-label="Call us at +8801787-878743"
                 >
                   +8801787-878743
                 </a>
@@ -41,10 +43,11 @@ export default function Contact(params) {
             <div className="flex items-center gap-5 font-jost">
               <MdEmail className="text-5xl bg-[#F7FAFF] rounded-full text-primary p-[10px] lg:h-12 w-12" />
               <div>
-                <h1 className="text-lg font-light">Email Us</h1>
+                <h2 className="text-lg font-light">Email Us</h2>
                 <a
                   href="mailto:info@qriunx.com"
-                  className="text-2xl font-semibold font-jost"
+                  className="text-2xl font-semibold font-jost hover:underline"
+                  aria-label="Email us at info@qriunx.com"
                 >
                   info@qriunx.com
                 </a>

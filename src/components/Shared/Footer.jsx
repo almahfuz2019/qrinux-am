@@ -35,7 +35,7 @@ export default function Footer(params) {
           : ""
       } text-white `}
     >
-      <div className="max-w-[1200px] mx-auto px-[5%] pt-12 sm:pt-14 pb-8 lg:pt-16 2xl:pt-20 2xl:pb-10">
+      <div className="max-w-[1200px] mx-auto px-[5%] pt-12 sm:pt-14 pb-8 md:pb-0 lg:pt-16 2xl:pt-20 2xl:pb-0">
         <div className="flex justify-between items-center gap-5">
           <div className="hidden sm:flex z-50 items-center gap-3">
             <Image
@@ -87,7 +87,7 @@ export default function Footer(params) {
           </Dock>
         </div>
     
-        <div className="flex sm:hidden z-50 justify-center items-center gap-3 mt-12">
+        <div className="flex sm:hidden z-50 justify-center items-center gap-3 ">
           <Image
             src="/assets/images/Common/logo.png"
             alt="Logo"

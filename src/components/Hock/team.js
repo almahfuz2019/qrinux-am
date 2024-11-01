@@ -10,6 +10,8 @@ import arif from "/public/assets/images/pages/about/team-members/md-arif-ahmed-s
 import mansur from "/public/assets/images/pages/about/team-members/abdullah-al-mansur-frontend-web-developer.png";
 import mahfuzSir from "/public/assets/images/pages/about/team-members/abdullah-al-mahfuz.jpg";
 import monjur from "/public/assets/images/pages/about/team-members/md-monjur-bakth-mazumder-frontend-developer-full-stack.png";
+import arman from "/public/assets/images/pages/about/team-members/arman-hossain-azad-cms-developer.jpg";
+import nader from "/public/assets/images/pages/about/team-members/md-nader-hussain-rimon-seo-expert.png";
 
 const team = [
   {
@@ -17,7 +19,8 @@ const team = [
     name: "Abdullah Al Mahfuz",
     designation: "Founder & CEO",
     img: mahfuzSir,
-    description: "<div> </div>",
+    description:
+      "<div><p> Abdullah Al Mahfuz is the <b> Founder and CEO of Qrinux </b>, an innovative tech agency based in Sylhet, Bangladesh, dedicated to helping businesses thrive in a competitive digital landscape. At Qrinux, he leads a team focused on creating user-centric, cutting-edge solutions that empower businesses to achieve digital growth. With expertise spanning web development, mobile applications, UI/UX design, CMS solutions, SEO, and secure payment integration, Qrinux provides comprehensive, end-to-end support for clients worldwide.</p> </br><p> Qrinux is built on Mahfuz's foundation in Computer Science and Engineering and his international experience. Prior to founding Qrinux, he honed his front-end skills at TechPlato, Inc. in Canada, where he further developed his expertise in advanced web technologies and cultivated a keen eye for high-performance, responsive applications.</p></br> <p>Mahfuz's background also includes a role as a Guest Teacher in Computer Science and Technology at Moulvibazar Polytechnic Institute, where he taught programming, web development, and software tools. His approach to teaching emphasized practical, hands-on learning, making complex topics accessible and engaging for students. This teaching experience not only strengthened his technical communication but also refined his leadership skills—qualities he now brings to Qrinux, where he leads a team committed to delivering smart, scalable solutions that drive business growth. </p></br> <p>Mahfuz’s focus remains on blending innovation with functionality, ensuring each Qrinux project reflects the highest standards of quality, security, and user experience.</p> </div>",
     skills: [
       "tailwindcss",
       "JavaScript",
@@ -163,7 +166,7 @@ const team = [
     _id: "8",
     name: "MD Nader Hussain Rimon",
     designation: "SEO Expert",
-    img: img,
+    img: nader,
     description:
       "<div> <p> Md Nader Hussain Rimon is a proficient SEO expert dedicated to enhancing website visibility on major search engines like Google. With expertise in keyword research, traffic trend analysis, on-page and off-page optimization, content development, and backlink building, Nader strives to boost organic rankings, drive website traffic, and improve online visibility for businesses. </p> </br> <p><u>Key Skills:</u></p> <ul> <li> <b>SEO Expertise:</b> On-page and off-page optimization, keyword research, site audit, Google Analytics, and more.</li> <li> <b>WordPress Website Development:</b> Skilled in building and optimizing WordPress websites.</li> <li> <b>Marketing & Local Citation:</b> Knowledgeable in Facebook marketing and local citation to improve local SEO rankings.</li> </ul> <p> Professional Background: With years of experience, including roles as an SEO Analyst and WordPress website builder, Nader has contributed to several online platforms such as hertsplumbfix.co.uk and gotoatrip.com. As the founder of naderhussainrimon.com, he continues to lead SEO projects to help clients achieve their digital marketing goals.</p> </div>",
     skills: [
@@ -181,7 +184,7 @@ const team = [
     _id: "9",
     name: "Arman Hossain Azad",
     designation: "Frontend Web Developer & CMS Expert ",
-    img: img,
+    img: arman,
     description:
       "<div> <p> Arman Hossain Azad is an experienced WordPress developer specializing in building and customizing websites that drive engagement and elevate online presence. His expertise encompasses a broad range of WordPress functionalities, from theme and plugin development to advanced customization tailored to unique client needs. Arman has a deep understanding of how to leverage WordPress tools to create high-quality, user-friendly websites. He is adept at implementing SEO best practices, ensuring that the websites he develops are optimized for search engines and capable of reaching a wider audience. </p></br> <p>In addition to his technical skills, Arman is passionate about staying updated with the latest web development trends and technologies, continuously seeking opportunities to enhance his knowledge and skill set. He is currently a student at Moulvibazar Polytechnic Institute, pursuing a degree in Computer Science and Technology, where he applies his academic learning to real-world projects, further refining his development skills.</p> </div>",
     skills: [
@@ -211,7 +214,7 @@ const team = [
   {
     _id: "11",
     name: "Mahdee Al Amin",
-    designation: "Full Stack Developer",
+    designation: "Full Stack Web Developer",
     img: alAmin,
     description:
       "<div> <p> Mahdee Al Amin is a Full Stack Developer with 1.5 years of experience, currently pursuing a BSc in Computer Science and Engineering at Metropolitan University. He is employed at Coding Symmetry, where he specializes in the MERN stack and Firebase to create robust web applications. Mahdee possesses a strong skill set that includes React.js, Node.js, MongoDB, and various front-end technologies, allowing him to tackle complex challenges effectively.</p></br> <p> He excels in problem-solving and thrives in collaborative team environments, leveraging his expertise to deliver high-quality solutions that meet client needs and expectations. His commitment to continuous learning and growth drives him to stay updated with the latest technologies and industry trends.</p> </div>",

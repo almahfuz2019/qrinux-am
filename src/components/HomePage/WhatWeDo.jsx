@@ -14,7 +14,7 @@ const WhatWeDo = () => {
       title: "Web Design & Development",
     },
     {
-      img: "/assets/images/pages/home/what-we-do-section/icon1.svg",
+      img: "/assets/images/pages/home/what-we-do-section/icon1.png",
       title: "App Design & Development",
     },
     {
@@ -28,25 +28,34 @@ const WhatWeDo = () => {
   ];
 
   return (
-    <section className="bg-[#163359] relative z-30 py-12 sm:py-14 lg:py-16 2xl:py-20 ">
+    <section
+      className="bg-[#163359] relative z-30 py-12 sm:py-14 lg:py-16 2xl:py-20"
+      aria-labelledby="what-we-do-heading"
+    >
       <Custom_Container>
-        <div className="flex flex-col lg:flex-row justify-between items-start sm:items-center sm:text-center lg:text-start">
+        <header className="flex flex-col lg:flex-row justify-between items-start sm:items-center sm:text-center lg:text-start">
           <div className="flex-1">
             <SubHeading>Our Services</SubHeading>
-            <Heading>What We Do</Heading>
+            <Heading id="what-we-do-heading">What We Do</Heading>
           </div>
           <div className="flex-1">
             <Description>
-            From design to development, every service is crafted for your success.
+              From design to development, every service is crafted for your
+              success.
             </Description>
           </div>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-6 sm:mt-7 lg:mt-8">
+        </header>
+
+        <div
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-6 sm:mt-7 lg:mt-8"
+          role="list"
+        >
           {services.map((service, i) => (
-            <Card key={i} service={service} />
+            <Card key={i} service={service} role="listitem" />
           ))}
         </div>
       </Custom_Container>
+
       <DotPattern
         width={30}
         height={30}
