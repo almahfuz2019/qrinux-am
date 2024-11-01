@@ -4,7 +4,7 @@ import confetti from "canvas-confetti";
 
 export function SpecialButton() {
   const handleClick = () => {
-    const end = Date.now() + 3 * 1000; // 3 seconds
+    const end = Date.now() + 5 * 1000; // 5 seconds
     const colors = ["#a786ff", "#fd8bbc", "#eca184", "#f8deb1"];
 
     const frame = () => {
@@ -37,7 +37,7 @@ export function SpecialButton() {
     const isFirstVisit = localStorage.getItem("isFirstVisit");
 
     if (!isFirstVisit) {
-      handleClick();
+      handleClick(); // Trigger confetti effect on first visit
       localStorage.setItem("isFirstVisit", "true");
     }
   }, []);

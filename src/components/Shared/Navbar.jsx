@@ -29,7 +29,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-primary py-4 text-white font-Jost relative z-50">
+    <div className="bg-primary py-3 sm:py-4 text-white font-Jost relative z-50">
       <Custom_Container>
         <div className="flex justify-between items-center gap-5">
           {/* Logo Section - Always Visible */}
@@ -40,7 +40,7 @@ const Navbar = () => {
               width={50}
               height={50}
             />
-            <h1 className="text-5xl font-teko hidden md:block">Qrinux</h1>
+            <h1 className="text-5xl font-teko pt-2 ">Qrinux</h1>
           </Link>
 
           {/* Desktop Menu */}

@@ -22,12 +22,16 @@ const team = [
     description:
       "<div><p> Abdullah Al Mahfuz is the <b> Founder and CEO of Qrinux </b>, an innovative tech agency based in Sylhet, Bangladesh, dedicated to helping businesses thrive in a competitive digital landscape. At Qrinux, he leads a team focused on creating user-centric, cutting-edge solutions that empower businesses to achieve digital growth. With expertise spanning web development, mobile applications, UI/UX design, CMS solutions, SEO, and secure payment integration, Qrinux provides comprehensive, end-to-end support for clients worldwide.</p> </br><p> Qrinux is built on Mahfuz's foundation in Computer Science and Engineering and his international experience. Prior to founding Qrinux, he honed his front-end skills at TechPlato, Inc. in Canada, where he further developed his expertise in advanced web technologies and cultivated a keen eye for high-performance, responsive applications.</p></br> <p>Mahfuz's background also includes a role as a Guest Teacher in Computer Science and Technology at Moulvibazar Polytechnic Institute, where he taught programming, web development, and software tools. His approach to teaching emphasized practical, hands-on learning, making complex topics accessible and engaging for students. This teaching experience not only strengthened his technical communication but also refined his leadership skills—qualities he now brings to Qrinux, where he leads a team committed to delivering smart, scalable solutions that drive business growth. </p></br> <p>Mahfuz’s focus remains on blending innovation with functionality, ensuring each Qrinux project reflects the highest standards of quality, security, and user experience.</p> </div>",
     skills: [
-      "tailwindcss",
       "JavaScript",
+      "TypeScript",
       "React",
+      "Redux Toolkit",
+      "Next.js",
       "Node.js",
-      "Express",
+      "Express.js",
       "MongoDB",
+      "PostgreSQL",
+      "MySQL",
       "Authentication",
     ],
     slug: "abdullah-al-mahfuz-founder-and-ceo-of-qrinux",

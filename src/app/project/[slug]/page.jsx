@@ -84,7 +84,7 @@ export default function ProjectDetails1(params) {
             </div>
             <div className="bg-[#F7FAFF] text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-9 gap-5 p-5 lg:p-10  my-6 sm:my-7 lg:my-8 2xl:my-10">
               <p
-                className="lg:col-span-4 row-span-2 p-5 font-Jost text-2xl font-medium flex flex-col justify-end"
+                className="lg:col-span-4 row-span-2 p-5 font-Jost text-2xl font-medium flex flex-col justify-end pt-16"
                 style={{ backgroundColor: color1 }}
               >
                 <span className="bg-black bg-opacity-25 w-min px-1">
@@ -169,15 +169,15 @@ export default function ProjectDetails1(params) {
                   alt={`image of  ${title}`}
                   className="h-fit w-full lg:w-1/2"
                 />
-                <div className="w-full sm:text-lg md:text-xl font-Jost text-primary py-4 text-justify">
-                  <p className="sm:text-lg md:text-xl font-Jost text-primary py-4 text-justify">
+                <div className="w-full sm:text-lg md:text-xl font-Jost text-primary py-4 ">
+                  <p className="sm:text-lg md:text-xl font-Jost text-primary py-4 ">
                     <b>Goal :</b> {goal}
                   </p>
-                  <p className="sm:text-lg md:text-xl font-Jost text-primary py-4 text-justify">
+                  <p className="sm:text-lg md:text-xl font-Jost text-primary py-4 ">
                     <b>Target Audience :</b> {targetAudience}
                   </p>
                   <div
-                    className="sm:text-lg md:text-xl font-Jost text-primary py-4 text-justify"
+                    className="sm:text-lg md:text-xl font-Jost text-primary py-4 "
                     dangerouslySetInnerHTML={{ __html: designPrinciples }}
                   />
                 </div>
@@ -187,12 +187,12 @@ export default function ProjectDetails1(params) {
               <div className="p-5 sm:p-10">
                 <div className="flex flex-col lg:flex-row gap-8 lg:gap-10">
                   <div
-                    className="md:w-1/2 space-y-7 sm:text-lg md:text-xl font-Jost text-primary text-justify"
+                    className="md:w-1/2 space-y-7 sm:text-lg md:text-xl font-Jost text-primary "
                     dangerouslySetInnerHTML={{ __html: pages1 }}
                   />
 
                   <div
-                    className="md:w-1/2 space-y-7 sm:text-lg md:text-xl font-Jost text-primary text-justify"
+                    className="md:w-1/2 space-y-7 sm:text-lg md:text-xl font-Jost text-primary "
                     dangerouslySetInnerHTML={{ __html: pages2 }}
                   />
                 </div>
@@ -232,7 +232,7 @@ export default function ProjectDetails1(params) {
           className={cn(
             "fill-gray-500", // Set dot color to a soft gray
             "opacity-70", // Reduce opacity for a lighter appearance
-            "[mask-image:linear-gradient(white,transparent,transparent)] py-4"
+            "[mask-image:linear-gradient(white,transparent,transparent)] py-4",
           )}
         />
       </div>

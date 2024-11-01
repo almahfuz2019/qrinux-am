@@ -10,7 +10,7 @@ import React from "react";
 
 export default function page() {
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <BreadcrumbSection />
       <AboutSection />
       <span className="hidden sm:block ">

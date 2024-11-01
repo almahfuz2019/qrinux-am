@@ -39,7 +39,9 @@ export default function RootLayout({ children }) {
         {/* <Particles quantity={150} size={0.5} /> */}
         <Navbar />
         {children}
-        <Footer /> <Toaster />
+        <Footer /> 
+        
+        <Toaster />
       </body>
     </html>
   );

@@ -6,22 +6,42 @@ export default function ProjectsImagesCarousel() {
   const projectImages = [
     {
       id: 1,
-      src: "/assets/images/pages/home/project-screenshorts/project-screenshort1.png",
+      src: "/assets/images/pages/home/project-screenshorts/1.png",
       alt: "Project Screenshot 1",
     },
     {
       id: 2,
-      src: "/assets/images/pages/home/project-screenshorts/project-screenshort1.png",
+      src: "/assets/images/pages/home/project-screenshorts/2.png",
       alt: "Project Screenshot 2",
     },
     {
       id: 3,
-      src: "/assets/images/pages/home/project-screenshorts/project-screenshort1.png",
+      src: "/assets/images/pages/home/project-screenshorts/3.png",
       alt: "Project Screenshot 3",
     },
     {
       id: 4,
-      src: "/assets/images/pages/home/project-screenshorts/project-screenshort1.png",
+      src: "/assets/images/pages/home/project-screenshorts/4.png",
+      alt: "Project Screenshot 4",
+    },
+    {
+      id: 5,
+      src: "/assets/images/pages/home/project-screenshorts/5.png",
+      alt: "Project Screenshot 4",
+    },
+    {
+      id: 6,
+      src: "/assets/images/pages/home/project-screenshorts/6.png",
+      alt: "Project Screenshot 4",
+    },
+    {
+      id: 7,
+      src: "/assets/images/pages/home/project-screenshorts/7.png",
+      alt: "Project Screenshot 4",
+    },
+    {
+      id: 8,
+      src: "/assets/images/pages/home/project-screenshorts/8.png",
       alt: "Project Screenshot 4",
     },
   ];
